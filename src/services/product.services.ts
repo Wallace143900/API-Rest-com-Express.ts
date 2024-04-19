@@ -1,8 +1,6 @@
 import { generateId, productList } from "../database/database";
 import { IProduct, TCreateProductData, TUpdateProductData } from "../interfaces/products.interface";
 
-// Processo lógico principal de cada rota (Regra de negócio)
-
 export const createProduct = (data: TCreateProductData) => {
 
     const now = new Date();

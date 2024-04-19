@@ -3,7 +3,6 @@ import { productControllers } from "../controllers/products.controleers";
 
 export const productsRoutes = Router();
 
-// Associando a lógica aos respectivos endereços
 
 productsRoutes.post("/", productControllers.create);
 

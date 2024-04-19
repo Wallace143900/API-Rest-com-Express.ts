@@ -1,11 +1,6 @@
 import { Request, Response, request } from "express";
 import { createProduct, getOnePoduct, getProducts, removeProduct, updateProduct } from "../services/product.services";
 
-
-//Lidando com os parâmetros de rotas - receber a requisião e emitir a resposta.
-
-// Administra entrada (requisição) / saídas (respostas) 
-
  const create = (request: Request, response: Response) => {
     const product = createProduct(request.body);
     
